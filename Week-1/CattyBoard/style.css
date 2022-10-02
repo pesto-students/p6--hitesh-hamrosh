@@ -1,0 +1,118 @@
+.wrapper {
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+  width: 40px;
+  height: 90vh;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar nav {
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  justify-content: space-around;
+
+  overflow: hidden;
+}
+footer {
+  height: 10vh;
+  display: flex;
+  background-color: #43689b;
+  padding: 0 20px 0 20px;
+  overflow: hidden;
+}
+header {
+  background-color: #454545;
+  color: #fff;
+  display: flex;
+  gap: 40px;
+  padding: 35px;
+}
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-audio-info {
+  align-items: center;
+  display: flex;
+  flex-basis: 40%;
+  color: #fff;
+  gap: 10px;
+}
+.footer-audio-header {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.footer-audio-header h5 {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+.footer-audio-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 60%;
+}
+.footer-audio-actions i,
+.sidebar nav i {
+  font-size: 32px;
+}
+.footer-audio-actions i {
+  color: #fff;
+}
+h3.audio-title {
+  margin: 0px;
+}
+.audio-actions span {
+  margin: 0 10px;
+}
+.audio-actions span i {
+  margin: 0 10px;
+}
+.audio-actions span:first-child {
+  margin: 0 10px 0 0;
+}
+.track-list {
+  width: calc(100%-20px);
+  padding: 10px;
+}
+.track-list table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+}
+.track-list table tr:nth-child(even) {
+  background: #ccc;
+}
+.track-list table tr td {
+  padding: 10px;
+}
+
+.track-list table {
+  table-layout: fixed;
+}
+.track-list button {
+  border: 1px solid #000;
+  padding: 3px;
+  background-color: transparent;
+  color: blue;
+}
