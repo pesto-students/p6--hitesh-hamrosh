@@ -1,0 +1,55 @@
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+}
+
+.bgred {
+  background-color: red;
+  transition-duration: 1s;
+}
+.bggreen {
+  background-color: green;
+  transition-duration: 1s;
+}
+.bgyellow {
+  background-color: yellow;
+  transition-duration: 1s;
+}
+.bgblue {
+  background-color: blue;
+  transition-duration: 1s;
+}
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.boxcontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.firstrow .secondrow {
+  display: flex;
+  flex-direction: row;
+}
+
+.boxcontainer:hover .box.bgred {
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+}
+.boxcontainer:hover .box.bgyellow {
+  transform: rotate(-90deg);
+  transform-origin: top right;
+}
+.boxcontainer:hover .box.bgblue {
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+}
+.boxcontainer:hover .box.bggreen {
+  transform: rotate(90deg);
+  transform-origin: bottom right;
+}
